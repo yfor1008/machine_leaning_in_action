@@ -29,15 +29,6 @@ def loadDataSet(fileName, delim='\t'):
     dataSet = np.array(dataSet)
     return dataSet
 
-'''pca算法
-    cov协方差=[(x1-x均值)*(y1-y均值)+(x2-x均值)*(y2-y均值)+...+(xn-x均值)*(yn-y均值)]/(n-1)
-    Args:
-        dataSet   原数据集矩阵
-        topNfeat  应用的N个特征
-    Returns:
-        lowDdataSet  降维后数据集
-        reconMat     新的数据集空间
-'''
 def pca(dataSet, t=1.0):
     '''
     ### Docs: pca算法
